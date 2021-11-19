@@ -1,9 +1,9 @@
 # GitHubActions-k6-DockerHub
 Workflow do GitHub Actions para build e push de imagens no Docker Hub, com execução de testes de carga via ferramenta de comando k6.
 
-Aplicação que serviu de base para a criação deste **workflow**:
+Aplicação que serviu de base para a criação deste **workflow** (inclui **testes de carga**):
 
-**https://github.com/renatogroffe/GitHubActions-k6-DockerHub**
+**https://github.com/renatogroffe/k6-LoadTests-Thresholds-ASPNETCore-SiteContagem**
 
 Artigos detalhando a utilização da ferramenta k6:
 
