@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  IMAGEM_DOCKERHUB: ${{ secrets.DOCKERHUB_USERNAME }}/testes-anp-sitecontagem
+  IMAGEM_DOCKERHUB: ${{ secrets.DOCKERHUB_USERNAME }}/testes-sitecontagem
   ASPNETCORE_URLS: 'http://localhost:5000'
   DIR_WEBAPP: './SiteContagem'
   LOG_EXECUTION_WEB: 'execution-webapp.log'
@@ -21,9 +21,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: |
-        sudo snap install kafkactl
-        kafkactl
     - uses: actions/checkout@v2
     - name: Setup .NET 6
       uses: actions/setup-dotnet@v1.8.2
